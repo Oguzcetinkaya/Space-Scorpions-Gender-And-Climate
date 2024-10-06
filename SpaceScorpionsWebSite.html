@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Gender Equality Advocate Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gotham', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('baba.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            background-color: rgba(13, 71, 161, 1);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0;
+            padding: 10px;
+            position: relative;
+        }
+        .logo-container {
+            position: absolute;
+            top: 60px;
+            left: 10px;
+        }
+        .logo-container img {
+            max-height: 80px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #add8e6;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar a:hover {
+            background-color: #bdbdbd;
+        }
+        .content {
+            padding: 60px;
+            text-align: center;
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 1px;
+        }
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .photo {
+            width: 200px;
+            height: 150px;
+            margin: 20px 0;
+            border: 5px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+        .photo-description {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .form-container {
+            margin: 20px 0;
+        }
+        .form-container input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1565c0;
+        }
+        footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        p {
+            text-align: justify;
+            margin: 10px 0;
+        }
+        .certificate {
+            display: none;
+            margin-top: 20px;
+            font-size: 52.4px;
+            color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Sustainable Gender Equality Advocate Program
+    </div>
+
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logokaliteli.png" alt="Logo">
+        </div>
+        <a onclick="showMainPage()">Main Page</a>
+        <a onclick="showCertificatePage()">Sustainable Gender Equality Advocate Certificate</a>
+    </div>
+
+    <div class="content" id="content">
+        <!-- İçerik buraya gelecek -->
+    </div>
+
+    <footer>
+        &copy; 2024 NASA Space Apps Space Scorpions
+    </footer>
+
+    <script>
+        // Sayfa yüklendiğinde main page'i göster
+        window.onload = function() {
+            showMainPage();
+        };
+
+        // Main Page - Yerel fotoğrafları gösterme fonksiyonu
+        function showMainPage() {
+            document.getElementById("content").innerHTML = `
+                <h2>Welcome to the Main Page</h2>
+                <p>Welcome! This website aims to address the impacts of gender inequality and climate change, focusing on the intersection of these two critical issues. Globally, women and other gender identities are affected by climate change in different ways, creating significant barriers to achieving social justice.</p>
+                <p>Gender inequality creates profound disparities in access to resources, decision-making processes, and resilience against the effects of climate change. While women play critical roles in agriculture, water management, and energy sectors, their ability to cope with the climate crisis is severely restricted. This situation hinders not only women's progress but also the sustainable future of entire societies.</p>
+                <p>This platform aims to help you understand the connections between gender inequality and climate change while raising awareness on these issues and discussing potential solutions. Here, you can access research, articles, and stories, discovering women's leadership and successes in the fight against climate change. Additionally, you can find information about events and projects discussing how we can work together for gender equality and climate justice, and you can earn the Sustainable Gender Equality Advocate certification.</p>
+                <div class="photo-container">
+                    <div>
+                        <img class="photo" src="1foto.jpg" alt="Gender Equality Climate 1">
+                        <p class="photo-description">Informative cases about Climate And Gender Inequality: <a href="https://drive.google.com/file/d/1q9WFI4laomCFcBMmPnY7XKJ8hcF_J1Fr/view?usp=sharing" target="_blank">here</a>.</p>
+                    </div>
+                    <div>
+                        <img class="photo" src="2foto.png" alt="Gender Equality Climate 2">
+                        <p class="photo-description"> You can see the main problems brought by Climate and Gender Inequality: <a href="https://drive.google.com/file/d/1Bg3ExS7bFLgwbW1oZm8AqnB0bzrq4akl/view?usp=sharing" target="_blank">here</a>.</p>
+                    </div>
+                    <div>
+                        <img class="photo" src="3foto.jpg" alt="Gender Equality Climate 3">
+                        <p class="photo-description">You can see solution suggestions for problems that develop parallel to Gender Inequality and Climate: <a href="https://drive.google.com/file/d/1Qq-X4gV7zY5bI2o25_GYW7XH_wdw3Uyw/view?usp=sharing" target="_blank">here</a>.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <video width="100%" controls>
+                        <source src="https://svs.gsfc.nasa.gov/vis/a000000/a004900/a004972/AgWorkerClimateGraph_HD.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            `;
+        }
+
+        // Test sayfası gösterme fonksiyonu
+        function showCertificatePage() {
+            document.getElementById("content").innerHTML = `
+                <h2>Enter Your Information</h2>
+                <div class="form-container">
+                    <input type="text" id="firstname" placeholder="First Name">
+                    <input type="text" id="lastname" placeholder="Last Name">
+                    <button onclick="startTest()">Start Test</button>
+                </div>
+            `;
+        }
+
+        // Test başlatma fonksiyonu
+        function startTest() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+
+            if (firstname && lastname) {
+                document.getElementById("content").innerHTML = `
+                    <h2>Welcome, ${firstname} ${lastname}! Please answer the following questions:</h2>
+                    <form id="testForm" onsubmit="submitTest(event, '${firstname}', '${lastname}')">
+                        ${generateQuestions()}
+                        <button type="submit">Submit Test</button>
+                    </form>
+                `;
+            } else {
+                alert("Please enter your name and surname.");
+            }
+        }
+
+        // Test soruları oluşturma fonksiyonu
+        function generateQuestions() {
+            const questions = [
+    { "question": "What is one effective strategy to reduce gender inequality in disaster-affected communities?", "options": ["Providing scholarships for boys", "Creating support networks for women", "Ignoring gender issues", "Increasing household chores for girls"], "answer": "Creating support networks for women" },
+    { "question": "Which program is crucial for supporting girls' education after a disaster?", "options": ["After-school sports programs", "Government-sponsored education grants", "Cultural festivals", "Community gatherings"], "answer": "Government-sponsored education grants" },
+    { "question": "What is a significant barrier to girls' education in disaster-affected areas?", "options": ["Increased community support", "Cultural norms that prioritize boys' education", "Higher education funding", "Availability of female teachers"], "answer": "Cultural norms that prioritize boys' education" },
+    { "question": "How can local organizations help improve girls' education after disasters?", "options": ["By restricting girls' access to schools", "By offering training and resources for educators", "By focusing solely on boys' education", "By reducing school days"], "answer": "By offering training and resources for educators" },
+    { "question": "What role do families play in girls' education during recovery from disasters?", "options": ["They can withdraw support for education", "They are the sole providers of education", "They can advocate for girls' education", "They focus only on boys' education"], "answer": "They can advocate for girls' education" },
+    { "question": "What is an important outcome of investing in girls' education after a disaster?", "options": ["Higher dropout rates", "Increased community resilience", "Less community engagement", "Increased economic dependency"], "answer": "Increased community resilience" },
+    { "question": "Which intervention is effective in addressing gender inequality in education?", "options": ["Restricting girls' attendance", "Providing financial incentives for families to send girls to school", "Promoting early marriage", "Decreasing the number of female teachers"], "answer": "Providing financial incentives for families to send girls to school" },
+    { "question": "What can raise awareness about the importance of girls' education in affected communities?", "options": ["Community workshops and discussions", "Ignoring the issue", "Only focusing on boys' education", "Community sports events"], "answer": "Community workshops and discussions" },
+    { "question": "Which method can help change cultural attitudes towards girls' education?", "options": ["Community education programs highlighting success stories", "Enforcing traditional gender roles", "Limiting girls' educational access", "Focusing solely on boys' education"], "answer": "Community education programs highlighting success stories" },
+    { "question": "How does economic hardship during disasters affect girls' education?", "options": ["It encourages families to invest in education", "It leads to higher enrollment rates", "It can cause families to prioritize boys' education", "It decreases the cost of education"], "answer": "It can cause families to prioritize boys' education" },
+    { "question": "What role can technology play in promoting girls' education after disasters?", "options": ["It can hinder access to education", "It can provide online learning resources", "It can reduce educational quality", "It can promote gender inequality"], "answer": "It can provide online learning resources" },
+    { "question": "How can disaster recovery plans be improved regarding girls' education?", "options": ["By excluding gender considerations", "By integrating gender-specific educational strategies", "By reducing school funding", "By focusing on male-only schools"], "answer": "By integrating gender-specific educational strategies" },
+    { "question": "What is a common misconception about girls' education in disaster-affected areas?", "options": ["That girls are less capable of learning", "That girls achieve higher academic results", "That families prioritize boys' education", "That girls do not wish to attend school"], "answer": "That girls are less capable of learning" },
+    { "question": "What can be the impact of community advocacy for girls' education?", "options": ["Decreased enrollment rates", "Increased awareness and support", "Increased resistance to girls' education", "Less funding for schools"], "answer": "Increased awareness and support" },
+    { "question": "What long-term benefit can arise from investing in girls' education post-disaster?", "options": ["Lower community engagement", "Improved health outcomes for families", "Higher rates of unemployment", "Increased poverty levels"], "answer": "Improved health outcomes for families" },
+    { "question": "Which approach can help sustain girls' education after a disaster?", "options": ["Reinforcing traditional gender roles", "Implementing mentorship programs for girls", "Reducing educational standards", "Limiting access to schools"], "answer": "Implementing mentorship programs for girls" },
+    { "question": "What significant challenge do female teachers face in disaster-affected communities?", "options": ["Lack of support from the community", "Higher salaries", "More job opportunities", "Strong community backing"], "answer": "Lack of support from the community" },
+    { "question": "What type of training is important for girls in disaster recovery?", "options": ["Only vocational training for boys", "Life skills and leadership training", "Limiting educational opportunities", "Emphasizing traditional roles"], "answer": "Life skills and leadership training" },
+    { "question": "How can disaster response initiatives incorporate gender considerations?", "options": ["By excluding women from decision-making", "By ensuring equal access to educational resources for boys and girls", "By prioritizing male-focused initiatives", "By limiting resources to girls"], "answer": "By ensuring equal access to educational resources for boys and girls" },
+    { "question": "What can help empower girls in disaster-affected areas?", "options": ["Providing access to education and resources", "Focusing solely on boys' education", "Ignoring the unique challenges faced by girls", "Reducing educational opportunities"], "answer": "Providing access to education and resources" }
+        ];
+
+            return questions.map((q, i) => `
+                <fieldset>
+                    <legend>${q.question}</legend>
+                    ${q.options.map((option) => `
+                        <label>
+                            <input type="radio" name="q${i + 1}" value="${option}"> ${option}
+                        </label><br>
+                    `).join('')}
+                </fieldset>
+            `).join('');
+        }
+
+        // Testi gönderme fonksiyonu
+        function submitTest(event, firstname, lastname) {
+            event.preventDefault();
+            let score = 0;
+
+            const questions = [
+    { "question": "What is one effective strategy to reduce gender inequality in disaster-affected communities?", "options": ["Providing scholarships for boys", "Creating support networks for women", "Ignoring gender issues", "Increasing household chores for girls"], "answer": "Creating support networks for women" },
+    { "question": "Which program is crucial for supporting girls' education after a disaster?", "options": ["After-school sports programs", "Government-sponsored education grants", "Cultural festivals", "Community gatherings"], "answer": "Government-sponsored education grants" },
+    { "question": "What is a significant barrier to girls' education in disaster-affected areas?", "options": ["Increased community support", "Cultural norms that prioritize boys' education", "Higher education funding", "Availability of female teachers"], "answer": "Cultural norms that prioritize boys' education" },
+    { "question": "How can local organizations help improve girls' education after disasters?", "options": ["By restricting girls' access to schools", "By offering training and resources for educators", "By focusing solely on boys' education", "By reducing school days"], "answer": "By offering training and resources for educators" },
+    { "question": "What role do families play in girls' education during recovery from disasters?", "options": ["They can withdraw support for education", "They are the sole providers of education", "They can advocate for girls' education", "They focus only on boys' education"], "answer": "They can advocate for girls' education" },
+    { "question": "What is an important outcome of investing in girls' education after a disaster?", "options": ["Higher dropout rates", "Increased community resilience", "Less community engagement", "Increased economic dependency"], "answer": "Increased community resilience" },
+    { "question": "Which intervention is effective in addressing gender inequality in education?", "options": ["Restricting girls' attendance", "Providing financial incentives for families to send girls to school", "Promoting early marriage", "Decreasing the number of female teachers"], "answer": "Providing financial incentives for families to send girls to school" },
+    { "question": "What can raise awareness about the importance of girls' education in affected communities?", "options": ["Community workshops and discussions", "Ignoring the issue", "Only focusing on boys' education", "Community sports events"], "answer": "Community workshops and discussions" },
+    { "question": "Which method can help change cultural attitudes towards girls' education?", "options": ["Community education programs highlighting success stories", "Enforcing traditional gender roles", "Limiting girls' educational access", "Focusing solely on boys' education"], "answer": "Community education programs highlighting success stories" },
+    { "question": "How does economic hardship during disasters affect girls' education?", "options": ["It encourages families to invest in education", "It leads to higher enrollment rates", "It can cause families to prioritize boys' education", "It decreases the cost of education"], "answer": "It can cause families to prioritize boys' education" },
+    { "question": "What role can technology play in promoting girls' education after disasters?", "options": ["It can hinder access to education", "It can provide online learning resources", "It can reduce educational quality", "It can promote gender inequality"], "answer": "It can provide online learning resources" },
+    { "question": "How can disaster recovery plans be improved regarding girls' education?", "options": ["By excluding gender considerations", "By integrating gender-specific educational strategies", "By reducing school funding", "By focusing on male-only schools"], "answer": "By integrating gender-specific educational strategies" },
+    { "question": "What is a common misconception about girls' education in disaster-affected areas?", "options": ["That girls are less capable of learning", "That girls achieve higher academic results", "That families prioritize boys' education", "That girls do not wish to attend school"], "answer": "That girls are less capable of learning" },
+    { "question": "What can be the impact of community advocacy for girls' education?", "options": ["Decreased enrollment rates", "Increased awareness and support", "Increased resistance to girls' education", "Less funding for schools"], "answer": "Increased awareness and support" },
+    { "question": "What long-term benefit can arise from investing in girls' education post-disaster?", "options": ["Lower community engagement", "Improved health outcomes for families", "Higher rates of unemployment", "Increased poverty levels"], "answer": "Improved health outcomes for families" },
+    { "question": "Which approach can help sustain girls' education after a disaster?", "options": ["Reinforcing traditional gender roles", "Implementing mentorship programs for girls", "Reducing educational standards", "Limiting access to schools"], "answer": "Implementing mentorship programs for girls" },
+    { "question": "What significant challenge do female teachers face in disaster-affected communities?", "options": ["Lack of support from the community", "Higher salaries", "More job opportunities", "Strong community backing"], "answer": "Lack of support from the community" },
+    { "question": "What type of training is important for girls in disaster recovery?", "options": ["Only vocational training for boys", "Life skills and leadership training", "Limiting educational opportunities", "Emphasizing traditional roles"], "answer": "Life skills and leadership training" },
+    { "question": "How can disaster response initiatives incorporate gender considerations?", "options": ["By excluding women from decision-making", "By ensuring equal access to educational resources for boys and girls", "By prioritizing male-focused initiatives", "By limiting resources to girls"], "answer": "By ensuring equal access to educational resources for boys and girls" },
+    { "question": "What can help empower girls in disaster-affected areas?", "options": ["Providing access to education and resources", "Focusing solely on boys' education", "Ignoring the unique challenges faced by girls", "Reducing educational opportunities"], "answer": "Providing access to education and resources" }
+        ];
+
+            const questionsElements = document.querySelectorAll("fieldset");
+            questionsElements.forEach((q, i) => {
+                const selected = q.querySelector(`input[name="q${i + 1}"]:checked`);
+                if (selected && selected.value === questions[i].answer) {
+                    score++;
+                }
+            });
+
+            showResult(firstname, lastname, score);
+        }
+
+        // Sonuçları gösterme fonksiyonu
+        function showResult(firstname, lastname, score) {
+            document.getElementById("content").innerHTML = `
+                <h2>Thank you for completing the test, ${firstname} ${lastname}!</h2>
+                <p>You scored: ${score} out of 20</p>
+                ${score >= 15 ? `
+                    <p class="certificate">Congratulations! You have earned your Sustainable Gender Equality Advocate Certificate.</p>
+                    <a href="SpaceScorpionsCertificate1.pdf" download><button>Download Certificate</button></a>
+                     <img src="spacescorpionscertificate.jpg"  width="600" height="400">
+                ` : `
+                    <p>Unfortunately, you did not score enough to earn the certificate. Please try again!</p>
+                `}
+            `;
+        }
+    </script>
+</body>
+</html>
